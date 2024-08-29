@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frenzzy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="content">
+            <div class="header">
+                <h1 class="title">Key Frenzzy</h1>
+                <div class="controls">
+                    <button id="toggleTimerBtn" aria-label="Toggle Timer"></button>
+                    <button id="toggleThemeBtn" aria-label="Toggle Theme"></button>
+                </div>
+            </div>
+            <div class="info">
+                <div class="time">
+                    <span class="label">Tiempo:</span>
+                    <span id="timeLeft" class="value">60s</span>
+                </div>
+                <div class="words">
+                    <span class="label">Palabras:</span>
+                    <span id="completedWords" class="value">0</span>
+                </div>
+            </div>
+            <div id="gameContainer" class="game-container">
+                <div id="currentWord" class="word-display"></div>
+                <input type="text" id="userInput" class="input" autofocus aria-label="Ingresa la palabra mostrada">
+            </div>
+            <div id="startContainer" class="start-container">
+                <button id="startGameBtn" class="start-button">Comenzar juego</button>
+                <div id="gameOverMessage" class="game-over-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

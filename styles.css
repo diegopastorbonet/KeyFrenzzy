@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 40rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #3b82f6, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.controls button {
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #d1d5db;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+.game-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.word-display {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #34d399, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s;
+  color: black;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.start-container {
+  text-align: center;
+}
+
+.start-button {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #3b82f6, #a855f7);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background: linear-gradient(to right, #2563eb, #9333ea);
+}
+
+.game-over-message {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Modo Oscuro */
+.dark-mode {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.dark-mode .content {
+  background-color: #374151;
+}
+
+.dark-mode .input {
+  border-color: #4b5563;
+  color: white; /* Hace el texto blanco en modo nocturno */
+}
+
+.dark-mode .controls button {
+  background-color: #4b5563;
+}
+
+.dark-mode .controls button:hover {
+  background-color: #374151;
+}
